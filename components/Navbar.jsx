@@ -36,7 +36,7 @@ const CustomIcon = ({ url, network }) => {
 const Navbar = () => {
   return (
     <header className=" z-1 relative z-10 flex w-full items-center justify-between px-8 font-medium dark:text-light sm:px-12 md:px-16 lg:px-32 lg:py-8 ">
-      <nav className="flex flex-col ">
+      <nav className="flex ">
         <CustomLink href="/" title={"Home"} className="mr-4 " />
         <CustomLink href="/about" title={"About"} className="mx-4" />
         <CustomLink href="/projects" title={"Projects"} className="mx-4" />
@@ -46,7 +46,7 @@ const Navbar = () => {
       <div className=" absolute  left-[50%] translate-x-[-50%] ">
         <Logo />
       </div>
-      <nav className=" flex  items-center justify-center gap-4 md:flex-wrap    ">
+      <nav className=" flex items-center justify-center gap-4 md:flex-wrap">
         <CustomIcon network={"twitter"} url={""} />
         <CustomIcon
           network={"github"}
@@ -55,6 +55,7 @@ const Navbar = () => {
         <CustomIcon network={"email"} url={"mailto:prathmtayade30@gmail.com"} />
         <ThemeSwitch />
       </nav>
+     
     </header>
   );
 };
