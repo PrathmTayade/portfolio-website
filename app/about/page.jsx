@@ -1,9 +1,8 @@
-
 import React from "react";
-import { Skills } from "@/components/Skills";
-import Experience from "@/components/Experience";
-import Education from "@/components/Education";
-import Bio from "@/components/Bio";
+import { Skills } from "@/components/sections/Skills";
+import Experience from "@/components/sections/Experience";
+import Education from "@/components/sections/Education";
+import Bio from "@/components/sections/Bio";
 
 const About = () => {
   return (

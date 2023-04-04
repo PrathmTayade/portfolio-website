@@ -1,8 +1,8 @@
 "use client";
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
-import LiIcon from "./LiIcon";
-import AnimatedText from "./AnimatedText";
+import LiIcon from "../LiIcon";
+import AnimatedText from "../AnimatedText";
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
   const ref = useRef(null);
@@ -28,7 +28,6 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
     </li>
   );
 };
-
 
 const Experience = () => {
   const ref = useRef(null);

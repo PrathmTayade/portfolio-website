@@ -6,7 +6,7 @@ import React from "react";
 function Logo() {
   const MotionLink = motion(Link);
   return (
-    <div className=" mt-2 flex items-center justify-center  ">
+    <div className="flexitems-center justify-center  ">
       <MotionLink
         whileHover={{
           backgroundColor: [

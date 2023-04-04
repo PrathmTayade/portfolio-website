@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import React from "react";
-import AnimatedText from "./AnimatedText";
+import AnimatedText from "../AnimatedText";
 
 const Skill = ({ name, x, y }) => {
   return (

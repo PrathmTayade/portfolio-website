@@ -2,6 +2,8 @@
 import { animate, motion } from "framer-motion";
 import React from "react";
 
+
+//Todo: text color as a gradient with trasperent text or bg linera something
 const quote = {
   hidden: {},
   show: {
@@ -13,7 +15,7 @@ const quote = {
 };
 
 const singleWord = {
-  hidden: { opacity: 0, y: 50 },
+  hidden: { opacity: 0, y: 50 , },
   show: { opacity: 1, y: 0, transition: { duration: 1 } },
 };
 

@@ -7,7 +7,7 @@ export const metadata = {
 };
 function layout({ children }) {
   return (
-    <main className="mb-16  flex w-full flex-col items-center justify-center dark:text-light">
+    <main className="mb-16  pt-20 flex w-full flex-col items-center justify-center dark:text-light">
       <TransitionEffect />
       {children}
     </main>

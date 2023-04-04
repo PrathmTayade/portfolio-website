@@ -1,8 +1,8 @@
 "use client";
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
-import LiIcon from "./LiIcon";
-import AnimatedText from "./AnimatedText";
+import LiIcon from "../LiIcon";
+import AnimatedText from "../AnimatedText";
 
 const Details = ({ type, time, place, info }) => {
   const ref = useRef(null);

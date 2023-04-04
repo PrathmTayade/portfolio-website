@@ -24,7 +24,7 @@ export default function Home() {
             <div className=" flex w-full flex-col items-center self-center text-center lg:w-1/2 lg:text-left  ">
               <AnimatedText
                 text={"Turning Vision Into Reality With Code And Design."}
-                className={"text-center md:text-left"}
+                className={" text-center  md:text-left"}
               />
 
               <p className="my-4 text-xs font-medium md:text-base ">
