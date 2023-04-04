@@ -29,17 +29,11 @@ const Footer = () => {
         <div className="grid justify-center pt-6 lg:justify-between">
           <div className="flex flex-col self-center text-center text-sm md:block md:space-x-6 lg:col-start-1">
             <span>©2023 All rights reserved</span>
-            <a rel="noopener noreferrer" href="#">
-              <span>Privacy policy</span>
-            </a>
-            <a rel="noopener noreferrer" href="#">
-              <span>Terms of service</span>
-            </a>
           </div>
           <div className="flex justify-center space-x-4 pt-4 lg:col-end-13 lg:pt-0">
             <a
               rel="noopener noreferrer"
-              href="#"
+              href="mailto:prathmtayade30@gmail.com"
               title="Email"
               className="flex h-10 w-10 items-center justify-center rounded-full dark:bg-primary dark:text-gray-900"
             >
@@ -70,7 +64,7 @@ const Footer = () => {
             </a>
             <a
               rel="noopener noreferrer"
-              href="#"
+              href="https://github.com/PrathmTayade"
               title="GitHub"
               className="flex h-10 w-10 items-center justify-center rounded-full dark:bg-primary dark:text-gray-900"
             >

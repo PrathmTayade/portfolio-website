@@ -7,7 +7,7 @@ import Providers from "@/components/Providers";
 const monts = Montserrat({ subsets: ["latin"], variable: "..fonts-mont" });
 export const metadata = {
   title: "Prathamesh's Portfolio ",
-  description: "Personal portfolio of Prathamesh Tayade, Web developer.",
+  description: "Personal portfolio of Prathamesh Tayade, built with Nextjs13 , Tailwindcss and framer motion",
 };
 
 export default function RootLayout({ children }) {

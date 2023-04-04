@@ -1,3 +1,4 @@
+import TransitionEffect from "@/components/TransitionEffect";
 import React from "react";
 
 export const metadata = {
@@ -7,6 +8,7 @@ export const metadata = {
 function layout({ children }) {
   return (
     <main className="mb-16  flex w-full flex-col items-center justify-center dark:text-light">
+      <TransitionEffect />
       {children}
     </main>
   );

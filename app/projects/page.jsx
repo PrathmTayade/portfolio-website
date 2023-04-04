@@ -1,45 +1,38 @@
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import React from "react";
-import { SocialIcon } from "react-social-icons";
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import project1 from "../../public/images/projects/metaverse.png";
 import Image from "next/image";
 
-const Project = ({ title, description }) => {
+const Project = ({ title, description, src, gitLink, projectLink }) => {
   return (
     <article className="relative flex w-full flex-col items-center justify-center rounded-2xl  rounded-br-2xl  border  border-solid  border-dark bg-light p-4  shadow-2xl dark:border-light dark:bg-dark  sm:p-6 ">
       <div className="absolute  -right-3 top-0 -z-10 h-[102%] w-[102%] rounded-[1.5rem] rounded-br-3xl bg-dark dark:bg-light  sm:-right-2 sm:w-[101%] md:h-[103%] md:rounded-[2rem]  " />
-      <a
+      <Link
         target="_blank"
-        className="w-full cursor-pointer overflow-hidden rounded-lg"
-        href="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
+        className="relative  h-auto w-full cursor-pointer overflow-hidden rounded-lg"
+        href={projectLink}
       >
         <Image
-          src={project1}
+          src={src}
           alt="project 1"
           className="h-auto w-full"
           style={{ color: "transparent", transform: "none" }}
         />
-      </a>
+      </Link>
       <div className="mt-4 flex w-full flex-col items-start justify-between">
         <span className="text-base font-medium text-primary dark:text-primaryDark md:text-lg lg:text-xl">
           Website
         </span>
-        <a
-          target="_blank"
-          className="underline-offset-2 hover:underline"
-          href="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
-        >
-          <h2 className="my-2 w-full text-left text-2xl font-bold lg:text-3xl ">
-           {title}
-          </h2>
-        </a>
+
+        <h2 className="my-2 w-full text-left text-2xl font-bold lg:text-3xl ">
+          {title}
+        </h2>
         <div className="flex w-full items-center  justify-between">
           <Link
             target="_blank"
             className="rounded text-lg font-medium underline md:text-base "
-            aria-label="Fashion Studio Website"
-            href="https://devdreaming.com/videos/build-stunning-fashion-studio-website-with-reactJS-locomotive-scroll-gsap"
+            href={projectLink}
           >
             Visit
           </Link>
@@ -47,7 +40,7 @@ const Project = ({ title, description }) => {
             target="_blank"
             className="w-8 md:w-6"
             aria-label="Fashion Studio Website"
-            href="https://github.com/codebucks27/wibe-studio"
+            href={gitLink}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -71,16 +64,17 @@ const Project = ({ title, description }) => {
 
 const FeaturedProject = ({ title, description, gitLink, projectLink, src }) => {
   return (
-    <article className=" relative flex w-full  flex-col items-center justify-between sm:rounded-3xl sm:rounded-br-2xl rounded-br-3xl border border-solid border-dark  bg-light p-4  shadow-2xl  dark:border-light dark:bg-dark rounded-2xl  sm:p-8 lg:flex-row md:p-12  ">
-      <div className="absolute  -right-2 top-0 -z-10 h-[102%] w-[100%] rounded-[1.5rem] sm:rounded-br-3xl bg-dark dark:bg-light  sm:-right-3 sm:h-[103%] sm:w-[101%] sm:rounded-[2.5rem] " />
+    <article className=" relative flex w-full  flex-col items-center justify-between rounded-2xl rounded-br-3xl border border-solid border-dark bg-light  p-4 shadow-2xl  dark:border-light  dark:bg-dark sm:rounded-3xl sm:rounded-br-2xl  sm:p-8 md:p-12 lg:flex-row  ">
+      <div className="absolute  -right-2 top-0 -z-10 h-[102%] w-[100%] rounded-[1.5rem] bg-dark dark:bg-light sm:-right-3  sm:h-[103%] sm:w-[101%] sm:rounded-[2.5rem] sm:rounded-br-3xl " />
       <Link
         target="_blank"
-        className="w-full  cursor-pointer overflow-hidden rounded-lg lg:w-1/2"
+        className="relative h-auto w-full cursor-pointer overflow-hidden rounded-lg lg:w-1/2"
         href={projectLink}
       >
         <Image
-          alt="Crypto Screener Application"
+          alt={`${title}`}
           className="h-auto w-full object-contain "
+          priority
           src={src}
         />
       </Link>
@@ -88,20 +82,12 @@ const FeaturedProject = ({ title, description, gitLink, projectLink, src }) => {
         <span className="text-base font-medium text-primary dark:text-primaryDark sm:text-xl">
           Featured Project
         </span>
-        <a
-          target="_blank"
-          className="underline-offset-2 hover:underline"
-          href="https://devdreaming.com/videos/build-crypto-screener-app-with-react-tailwind-css"
-        >
-          <h2 className="my-2 w-full text-left text-2xl font-bold sm:text-4xl lg:text-3xl">
-            {title}
-          </h2>
-        </a>
+
+        <h2 className="my-2 w-full text-left text-2xl font-bold sm:text-4xl lg:text-3xl">
+          {title}
+        </h2>
         <p className=" my-2 rounded-md font-medium text-dark dark:text-light sm:text-sm">
-          A feature-rich Crypto Screener App using React, Tailwind CSS, Context
-          API, React Router and Recharts. It shows detail regarding almost all
-          the cryptocurrency. You can easily convert the price in your local
-          currency.
+          {description}
         </p>
         <div className="mt-2 flex items-center">
           <Link
@@ -151,20 +137,29 @@ const Page = () => {
         <div className="col-span-12">
           <FeaturedProject
             title={"Metaverser Madness"}
-            description={"asdsds adasdsad sdsadsa d"}
+            description={"description"}
             gitLink={"https://github.com/PrathmTayade/Metaverse_animations"}
             projectLink={"https://poetic-biscuit-d9ae34.netlify.app/"}
             src={project1}
           />
         </div>
         <div className="col-span-12  sm:col-span-6">
-          <Project title={"cyber"} description={"asdsds adasdsad sdsadsa d"} />
+          <Project
+            title={"projec 1"}
+            projectLink={"https://github.com/PrathmTayade"}
+            src={project1}
+            gitLink={"https://github.com/PrathmTayade"}
+            description={"asdsds adasdsad sdsadsa d"}
+          />
         </div>
         <div className="col-span-12  sm:col-span-6">
-          <Project title={"cyber"} description={"asdsds adasdsad sdsadsa d"} />
-        </div>
-        <div className="col-span-12  sm:col-span-6">
-          <Project title={"cyber"} description={"asdsds adasdsad sdsadsa d"} />
+          <Project
+            title={"project 2"}
+            projectLink={"https://github.com/PrathmTayade"}
+            src={project1}
+            gitLink={"https://github.com/PrathmTayade"}
+            description={"asdsds adasdsad sdsadsa d"}
+          />
         </div>
       </div>
     </div>

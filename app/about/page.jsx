@@ -1,5 +1,4 @@
-import AnimatedText from "@/components/AnimatedText";
-import Image from "next/image";
+
 import React from "react";
 import { Skills } from "@/components/Skills";
 import Experience from "@/components/Experience";
@@ -8,8 +7,8 @@ import Bio from "@/components/Bio";
 
 const About = () => {
   return (
-    <div className="snap-y snap-mandatory">
-      <div className="snap-center">
+    <div className="snap-y snap-proximity">
+      <div className="snap-start">
         <Bio />
       </div>
       <div className="snap-center">
