@@ -12,8 +12,8 @@ const Path = (props) => (
   />
 );
 
-const MenuToggle = ({ toggle }) => (
-  <button onClick={toggle} className="z-50">
+const MenuToggle = () => (
+  <div className="z-50">
     <svg width="23" height="23" viewBox="0 0 23 23">
       <Path
         variants={{
@@ -36,7 +36,7 @@ const MenuToggle = ({ toggle }) => (
         }}
       />
     </svg>
-  </button>
+  </div>
 );
 
 const links = [
@@ -109,9 +109,7 @@ const Menu = () => {
         )}
       </AnimatePresence>
       <div className="fixed">
-        {/* <MenuToggle toggle={cycleOpen} /> */}
-
-        <button onClick={cycleOpen}>{open ? "Close" : "Open"}</button>
+        <MenuToggle toggle={cycleOpen} />
       </div>
     </main>
   );

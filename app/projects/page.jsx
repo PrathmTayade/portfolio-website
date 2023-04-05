@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Project = ({ title, description, src, gitLink, projectLink }) => {
   return (
-    <article className="relative flex w-full flex-col items-center justify-center rounded-2xl  rounded-br-2xl  border  border-solid  border-dark bg-light p-4  shadow-2xl dark:border-light dark:bg-dark  sm:p-6 ">
+    <article className="relative  flex w-full flex-col items-center justify-center rounded-2xl  rounded-br-2xl  border  border-solid  border-dark bg-light p-4  shadow-2xl dark:border-light dark:bg-dark  sm:p-6 ">
       <div className="absolute  -right-3 top-0 -z-10 h-[102%] w-[102%] rounded-[1.5rem] rounded-br-3xl bg-dark dark:bg-light  sm:-right-2 sm:w-[101%] md:h-[103%] md:rounded-[2rem]  " />
       <Link
         target="_blank"
@@ -126,14 +126,14 @@ const FeaturedProject = ({ title, description, gitLink, projectLink, src }) => {
 
 const Page = () => {
   return (
-    <div className="z-0 inline-block h-full w-full bg-light p-8 pt-16 dark:bg-dark sm:p-12 md:p-16 lg:p-24 xl:p-32">
-      <div className="mx-auto flex w-full flex-col items-center justify-center overflow-hidden  py-0   text-center sm:py-2">
+    <div className="z-0 inline-block h-full w-full  p-8  sm:px-12 md:px-16 lg:px-24 xl:px-32">
+      <div className="mx-auto flex w-full flex-col items-center justify-center overflow-hidden   pb-10 text-center ">
         <AnimatedText
           text={"Imagination Trumps Knowledge!"}
           className={"  lg:!text-8xl"}
         />
       </div>
-      <div className="md::gap-x-8 grid grid-cols-12 gap-24 gap-x-0 gap-y-32 sm:gap-y-24 lg:gap-x-16">
+      <div className="grid grid-cols-12 gap-24 gap-x-0 gap-y-32 sm:gap-y-24 md:gap-x-8 lg:gap-x-16">
         <div className="col-span-12">
           <FeaturedProject
             title={"Metaverser Madness"}

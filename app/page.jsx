@@ -9,10 +9,10 @@ export default function Home() {
   return (
     <>
       <TransitionEffect />
-      <main className=" container flex min-h-screen items-center text-dark dark:text-light sm:items-start ">
-        <div className=" z-0 inline-block h-full w-full bg-light px-8 dark:bg-dark md:px-16 lg:px-24 ">
-          <div className="flex w-full flex-col items-start justify-between md:flex-row ">
-            <div className="inline-block w-full md:w-1/2  ">
+      <main className=" container flex min-h-screen items-center  sm:items-start ">
+        <div className="  inline-block h-full w-full  px-8  md:px-16 lg:px-24 ">
+          <div className="flex w-full flex-col items-center  justify-between md:flex-row md:items-start ">
+            <div className="inline-block  w-full md:w-1/2  ">
               <Image
                 src={profilePic}
                 alt="profile"
@@ -44,7 +44,7 @@ export default function Home() {
                   Resume <LinkArrow className={"ml-1 w-6 "} />
                 </Link>
                 <Link
-                  href="mailto: abcd@gmail.com"
+                  href="mailto:prathmtayade30@gmail.com"
                   target={"_blank"}
                   className="font-medium capitalize text-dark underline dark:text-light  "
                 >

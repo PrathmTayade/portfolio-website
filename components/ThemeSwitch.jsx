@@ -22,9 +22,9 @@ const ThemeSwitch = () => {
   return (
     <div
       onClick={setThemeMode}
-      className="ease ml-3 flex items-center justify-center rounded-full bg-dark p-1 text-light "
+      className="ease ml-3 flex items-center justify-center rounded-full p-1 "
     >
-      {theme === "light" ? (
+      {theme === "dark" ? (
         <SunIcon className="fill-dark" />
       ) : (
         <MoonIcon className="fill-dark" />

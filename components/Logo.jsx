@@ -6,7 +6,7 @@ import React from "react";
 function Logo() {
   const MotionLink = motion(Link);
   return (
-    <div className="flexitems-center justify-center  ">
+    <div className="flex items-center justify-center  rounded-full ">
       <MotionLink
         whileHover={{
           backgroundColor: [
@@ -18,7 +18,7 @@ function Logo() {
             "#121212",
           ],
         }}
-        transition={{ duration: 1, repeatType: "loop" }}
+        transition={{ repeat: 3 }}
         href={"/"}
         className="flex h-16 w-16 items-center justify-center rounded-full  bg-dark text-2xl font-bold text-white dark:border-2 dark:border-solid dark:border-light "
       >
