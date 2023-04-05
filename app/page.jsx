@@ -12,13 +12,12 @@ export default function Home() {
       <main className=" container flex min-h-screen items-center  sm:items-start ">
         <div className="  inline-block h-full w-full  px-8  md:px-16 lg:px-24 ">
           <div className="flex w-full flex-col items-center  justify-between md:flex-row md:items-start ">
-            <div className="inline-block  w-full md:w-1/2  ">
+            <div className="relative inline-block w-full md:w-1/2  ">
               <Image
                 src={profilePic}
                 alt="profile"
-                className="h-auto w-full  "
+                className=" object-contain"
                 priority
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
             </div>
             <div className=" flex w-full flex-col items-center self-center text-center lg:w-1/2 lg:text-left  ">

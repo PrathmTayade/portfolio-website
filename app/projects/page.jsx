@@ -1,8 +1,9 @@
-import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import React from "react";
 import project1 from "../../public/images/projects/metaverse.png";
+import project2 from "../../public/images/projects/Shopping-website.png";
 import Image from "next/image";
+import AnimatedText from "@/components/AnimatedText";
 
 const Project = ({ title, description, src, gitLink, projectLink }) => {
   return (
@@ -86,7 +87,7 @@ const FeaturedProject = ({ title, description, gitLink, projectLink, src }) => {
         <h2 className="my-2 w-full text-left text-2xl font-bold sm:text-4xl lg:text-3xl">
           {title}
         </h2>
-        <p className=" my-2 rounded-md font-medium text-dark dark:text-light sm:text-sm">
+        <p className=" my-2  rounded-md  font-medium text-dark dark:text-light sm:text-sm md:text-justify">
           {description}
         </p>
         <div className="mt-2 flex items-center">
@@ -137,7 +138,7 @@ const Page = () => {
         <div className="col-span-12">
           <FeaturedProject
             title={"Metaverser Madness"}
-            description={"description"}
+            description="Metaverse Madness is a stunning website that will take you on a journey through the imaginative world of virtual reality. Built with the latest web development tools, including Next.js, Tailwind, and Framer Motion, this website features a vibrant home page with stunning animations and a breathtaking gallery of digital art. Discover the creative mind behind the projects, explore the mesmerizing world of metaverse, and get in touch to collaborate on your next virtual reality adventure. Welcome to Metaverse Madness, where reality meets fantasy!"
             gitLink={"https://github.com/PrathmTayade/Metaverse_animations"}
             projectLink={"https://poetic-biscuit-d9ae34.netlify.app/"}
             src={project1}
@@ -145,10 +146,10 @@ const Page = () => {
         </div>
         <div className="col-span-12  sm:col-span-6">
           <Project
-            title={"projec 1"}
-            projectLink={"https://github.com/PrathmTayade"}
-            src={project1}
-            gitLink={"https://github.com/PrathmTayade"}
+            title={"Shopping Website"}
+            projectLink={"https://rainbow-caramel-5eb6ac.netlify.app/"}
+            src={project2}
+            gitLink={"https://github.com/PrathmTayade/Shopping-Website"}
             description={"asdsds adasdsad sdsadsa d"}
           />
         </div>

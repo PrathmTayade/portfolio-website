@@ -22,7 +22,7 @@ const ThemeSwitch = () => {
   return (
     <div
       onClick={setThemeMode}
-      className="ease ml-3 flex items-center justify-center rounded-full p-1 "
+      className="ease ml-3 h-10 w-10  flex items-center justify-center rounded-full p-1 "
     >
       {theme === "dark" ? (
         <SunIcon className="fill-dark" />

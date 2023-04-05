@@ -153,7 +153,7 @@ function Menu() {
             animate={open ? "open" : "closed"}
             className="relative w-screen p-2 "
           > */}
-          <Popover.Panel className=" absolute  z-10 m-3 w-screen  ">
+          <Popover.Panel className=" absolute  z-10 mt-3 w-screen  ">
             <motion.div
               variants={sidebar}
               className="  rounded-lg shadow-lg ring-1 ring-black ring-opacity-5"

@@ -48,13 +48,13 @@ const Education = () => {
             type={"B.Tech"}
             time={"2018-2022"}
             place={"Dr. Babasaheb Ambedkar Techonological University"}
-            info={"Completed Graduaction"}
+            info={" Graduation degree from DBATU, Lonere, Raigad, Maharashtra "}
           />
           <Details
             type={"H.S.C"}
             time={"2018"}
             place={"G.E.I.S, M.H.High school and Junior College"}
-            info={"hsc sdsadsad sdsadsd asdsad ssadsadsadsd"}
+            info={"HSC"}
           />
           <Details
             type={"S.S.C"}

@@ -91,7 +91,7 @@ function Menu() {
               className={`
                 ${
                   open ? "" : "text-opacity-90"
-                } group inline-flex items-center rounded-md  px-3 py-2 text-base font-medium hover:text-opacity-100  focus:outline-none focus-visible:ring-2 focus-visible:ring-dark focus-visible:ring-opacity-75  dark:text-light dark:focus-visible:ring-light`}
+                } group inline-flex items-center justify-center rounded-md  px-3 py-2 text-base font-medium hover:text-opacity-100  focus:outline-none focus-visible:ring-2 focus-visible:ring-dark focus-visible:ring-opacity-75  dark:text-light dark:focus-visible:ring-light`}
             >
               <span>
                 <MenuToggle open={open} />
@@ -111,7 +111,7 @@ function Menu() {
                   <div className="relative flex flex-col gap-8 bg-light p-7 dark:bg-dark">
                     {navigation.map((item) => (
                       <Link key={item.name} href={item.href} className=" ">
-                        <Popover.Button className="  flex w-full items-center rounded-lg text-2xl font-bold   transition duration-150 ease-in-out hover:bg-gray-50 hover:text-light focus:outline-none focus-visible:ring  focus-visible:ring-opacity-50">
+                        <Popover.Button className="  flex w-full items-center rounded-lg text-xl font-bold   transition duration-150 ease-in-out hover:bg-gray-50 hover:text-light focus:outline-none focus-visible:ring  focus-visible:ring-opacity-50">
                           {item.name}
                         </Popover.Button>
                       </Link>
@@ -128,35 +128,33 @@ function Menu() {
 }
 
 const Navbar = () => {
+  const path = usePathname();
+
   return (
-    <nav className="fixed inset-x-0  top-0 z-10  flex justify-between bg-light/75 p-4 text-dark  transition-colors duration-300 ease-out dark:bg-dark/75 dark:text-light ">
-      <div>
-        <div className="hidden md:flex  ">
-          <Tab.Group>
-            <Tab.List className="flex gap-2  rounded-xl  p-1">
-              {navigation.map((item) => (
-                <Link key={item.name} href={item.href}>
-                  <Tab
-                    className={({ selected }) =>
-                      classNames(
-                        "w-full rounded-lg px-3  py-2.5 text-base font-medium leading-5 ",
-                        "ring-white ring-opacity-60 ring-offset-2 ring-offset-dark focus:outline-none focus:ring-2",
-                        selected
-                          ? "bg-dark text-light shadow dark:bg-light dark:text-dark"
-                          : "  hover:bg-white/[0.12]  hover:ring-2 "
-                      )
-                    }
-                  >
-                    {item.name}
-                  </Tab>
-                </Link>
-              ))}
-            </Tab.List>
-          </Tab.Group>
+    <nav className="fixed inset-x-0  top-0 z-10  flex items-center justify-between bg-light/75 p-4 text-dark  transition-colors duration-300 ease-out dark:bg-dark/75 dark:text-light ">
+      <div className="hidden md:flex  ">
+        <div className="flex gap-2  rounded-xl  p-1">
+          {navigation.map((item) => (
+            <Link key={item.name} href={item.href}>
+              <div
+                className={`w-full rounded-lg px-3 py-2.5  text-base font-medium leading-5 ring-white ring-opacity-60 ring-offset-2 ring-offset-dark focus:outline-none focus:ring-2 ${
+                  path === item.href
+                    ? "bg-dark text-light shadow dark:bg-light dark:text-dark"
+                    : "  hover:bg-white/[0.12]  hover:ring-2"
+                }`}
+              >
+                {/* ("w-full rounded-lg px-3 py-2.5 text-base font-medium leading-5 ring-white ring-opacity-60 ring-offset-2 ring-offset-dark focus:outline-none focus:ring-2  ",
+                  path === item.href
+                    ? "bg-dark text-light shadow dark:bg-light dark:text-dark"
+                    : "  hover:bg-white/[0.12]  hover:ring-2}") */}
+                {item.name}
+              </div>
+            </Link>
+          ))}
         </div>
-        <div className="md:hidden">
-          <Menu />
-        </div>
+      </div>
+      <div className="md:hidden">
+        <Menu />
       </div>
 
       {/* <Logo />                                              */}
