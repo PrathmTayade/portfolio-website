@@ -5,7 +5,7 @@ import { Skills } from "@/components/sections/Skills";
 
 const About = () => {
   return (
-    <div className="">
+    <div>
       <Bio />
 
       <Skills />

@@ -1,10 +1,18 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
+import { usePathname } from "next/navigation";
 import React from "react";
+import TransitionEffect from "./TransitionEffect";
 
 const PageWrapper = ({ children }) => {
-  return <motion.main>{children}</motion.main>;
+  const path = usePathname();
+  console.log(path);
+  return (
+    <AnimatePresence key={path} mode="wait">
+      {children}
+    </AnimatePresence>
+  );
 };
 
 export default PageWrapper;

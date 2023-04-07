@@ -20,7 +20,7 @@ function Logo() {
         }}
         transition={{ repeat: 3 }}
         href={"/"}
-        className="flex h-16 w-16 items-center justify-center rounded-full  bg-dark text-2xl font-bold text-white dark:border-2 dark:border-solid dark:border-light "
+        className="flex h-12 w-12 items-center justify-center rounded-full  bg-dark text-xl font-bold text-white dark:border-2 dark:border-solid dark:border-light "
       >
         PT
       </MotionLink>

@@ -3,6 +3,7 @@ import "./globals.css";
 import { Montserrat } from "next/font/google";
 import Footer from "@/components/ui/Footer";
 import Providers from "@/components/Providers";
+import Nav from "@/components/ui/Nav";
 
 const monts = Montserrat({ subsets: ["latin"], variable: "..fonts-mont" });
 export const metadata = {
@@ -18,7 +19,8 @@ export default function RootLayout({ children }) {
         className={`min-h-screen w-full bg-light pt-20 text-dark transition-colors duration-300 ease-out  dark:bg-dark dark:text-light  ${monts.className} `}
       >
         <Providers>
-          <Navbar />
+          <Nav/>
+          {/* <Navbar /> */}
           {children}
           <Footer />
         </Providers>
