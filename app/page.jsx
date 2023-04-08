@@ -8,9 +8,9 @@ import TransitionEffect from "@/components/TransitionEffect";
 export default function Home() {
   return (
     <>
-      <TransitionEffect />
-      <main className=" container flex min-h-screen items-center  sm:items-start ">
-        <div className="  inline-block h-full w-full  px-8  md:px-16 lg:px-24 ">
+      {/* <TransitionEffect /> */}
+      <main className=" container flex  items-center  sm:items-start ">
+        <div className=" w-full py-5 mb-4 px-8  md:px-16 lg:px-24 ">
           <div className="flex w-full flex-col items-center  justify-between md:flex-row md:items-start ">
             <div className="relative inline-block w-full md:w-1/2  ">
               <Image

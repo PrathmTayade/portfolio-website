@@ -5,7 +5,7 @@ import profilePic from "../../public/images/profile/profile pic no bg.png";
 
 const Bio = () => {
   return (
-    <div className="">
+    <section className="">
       <div className="mx-auto flex w-full flex-col items-center justify-center overflow-hidden  text-center">
         <AnimatedText
           text={"Passion Fuels Purpose! "}
@@ -37,7 +37,7 @@ const Bio = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

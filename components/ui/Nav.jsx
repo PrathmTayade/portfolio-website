@@ -9,7 +9,7 @@ import Logo from "../Logo";
 const navigation = [
   { name: "Home", href: "/", current: false },
   { name: "About", href: "/about", current: false },
-  { name: "Projects", href: "projects", current: false },
+  { name: "Projects", href: "/projects", current: false },
 ];
 
 export default function Nav() {

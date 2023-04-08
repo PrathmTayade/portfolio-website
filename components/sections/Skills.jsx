@@ -19,7 +19,7 @@ const Skill = ({ name, x, y }) => {
 };
 export const Skills = () => {
   return (
-    <div className=" w-full  pt-32 ">
+    <section className=" w-full  pt-32 ">
       <AnimatedText text={"Skills"} className="text-center" />
       <div className="relative mb-64 flex   h-[40vh] w-full  items-center justify-center rounded-full  bg-circularLight p-6 dark:bg-circularDark sm:h-[60vh] sm:bg-circularLightSm sm:dark:bg-circularDarkSm md:h-[80vh] md:bg-circularLightMd   md:dark:bg-circularDarkMd lg:bg-circularLightLg  lg:dark:bg-circularDarkLg xl:h-[100vh]    ">
         <motion.div
@@ -40,6 +40,6 @@ export const Skills = () => {
         <Skill name="Tailwind CSS" x="18vw" y="18vw" />
         <Skill name="Github " x="-30vw" y="-2vw" />
       </div>
-    </div>
+    </section>
   );
 };

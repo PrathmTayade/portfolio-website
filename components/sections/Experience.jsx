@@ -8,17 +8,17 @@ import LiIcon from "../LiIcon";
 const Details = ({ position, company, companyLink, time, address, work }) => {
   const ref = useRef(null);
   return (
-    <li
-      ref={ref}
-      className="mx-auto my-8 flex w-[60%] flex-col items-start justify-between first:mt-0 last:mb-0 md:w-[80%]"
-    >
+    <li className="mx-auto  my-8 flex w-[60%] flex-col items-start justify-between first:mt-0 last:mb-0 md:w-[80%]">
       <LiIcon reference={ref} />
       <motion.div
         initial={{ y: 50 }}
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="xs:text-lg text-2xl font-bold capitalize sm:text-xl ">
+        <h3
+          ref={ref}
+          className="xs:text-lg text-2xl font-bold capitalize sm:text-xl "
+        >
           {position}&nbsp;
           <Link href={companyLink} target="_blank" className="text-orange-400 ">
             @{company}
@@ -46,7 +46,7 @@ const Experience = () => {
   });
 
   return (
-    <div className="h-screen w-full overflow-hidden ">
+    <section className="h-full  w-full overflow-hidden ">
       <div className="p-5">
         <AnimatedText text={"Experience"} className="text-center" />
       </div>
@@ -75,7 +75,7 @@ const Experience = () => {
           />
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

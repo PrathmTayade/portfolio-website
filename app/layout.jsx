@@ -16,10 +16,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`min-h-screen w-full bg-light pt-20 text-dark transition-colors duration-300 ease-out  dark:bg-dark dark:text-light  ${monts.className} `}
+        className={`w-full bg-light pt-20 text-dark transition-colors duration-300 ease-out  dark:bg-dark dark:text-light  ${monts.className} `}
       >
         <Providers>
-          <Nav/>
+          <Nav />
           {/* <Navbar /> */}
           {children}
           <Footer />
