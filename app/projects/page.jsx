@@ -13,7 +13,7 @@ const Page = () => {
           className={"  lg:!text-8xl"}
         />
       </div>
-      <div className="grid grid-cols-12 gap-24 gap-x-0 gap-y-32 sm:gap-y-24 md:gap-x-8 lg:gap-x-16">
+      <div className="grid grid-cols-12  gap-x-6 gap-y-32 sm:gap-y-24  md:gap-x-10 lg:gap-x-16 ">
         <div className="col-span-12">
           <FeaturedProjects
             title={"Metaverser Madness"}

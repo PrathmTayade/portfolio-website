@@ -5,7 +5,7 @@ import Image from "next/image";
 const Projects = ({ title, description, src, gitLink, projectLink }) => {
   return (
     <article className="relative  flex w-full flex-col items-center justify-center rounded-2xl  rounded-br-2xl  border  border-solid  border-dark bg-light p-4  shadow-2xl dark:border-light dark:bg-dark  sm:p-6 ">
-      <div className="absolute  -right-3 top-0 -z-10 h-[102%] w-[102%] rounded-[1.5rem] rounded-br-3xl bg-dark dark:bg-light  sm:-right-2 sm:w-[101%] md:h-[103%] md:rounded-[2rem]  " />
+      <div className="absolute  md:-right-3 top-0 -z-10 h-[102%] w-[102%] rounded-[1.5rem] md:rounded-br-3xl bg-dark dark:bg-light  -right-2 sm:w-[101%] md:h-[103%] md:rounded-[2rem]  " />
       <Link
         target="_blank"
         className="relative  h-auto w-full cursor-pointer overflow-hidden rounded-lg"
