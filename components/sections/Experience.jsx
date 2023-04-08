@@ -28,7 +28,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         <span className="xs:text-sm font-medium capitalize text-dark/75 dark:text-light/50">
           {time} | {address}
         </span>
-        <ul className="list-disc font-medium  md:text-sm">
+        <ul className="list-disc font-medium md:text-base  text-sm">
           {work.map((list, id) => (
             <li key={id}>{list}</li>
           ))}
@@ -46,7 +46,7 @@ const Experience = () => {
   });
 
   return (
-    <section className="h-full  w-full overflow-hidden ">
+    <section className="h-full mb-24  w-full overflow-hidden ">
       <div className="p-5">
         <AnimatedText text={"Experience"} className="text-center" />
       </div>

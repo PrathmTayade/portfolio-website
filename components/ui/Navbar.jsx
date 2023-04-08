@@ -157,7 +157,6 @@ const Navbar = () => {
         <Menu />
       </div>
 
-      {/* <Logo />                                              */}
 
       <ThemeSwitch />
     </nav>

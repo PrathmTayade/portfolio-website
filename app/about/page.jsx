@@ -5,7 +5,7 @@ import { Skills } from "@/components/sections/Skills";
 
 const About = () => {
   return (
-    <div>
+    <>
       <Bio />
 
       <Skills />
@@ -13,7 +13,7 @@ const About = () => {
       <Experience />
 
       <Education />
-    </div>
+    </>
   );
 };
 
