@@ -98,9 +98,9 @@ export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const path = usePathname();
   return (
-    <header>
+    <header className="container">
       <nav
-        className="fixed inset-x-0  top-0 z-[5]  flex items-center justify-between bg-light/75 p-4 text-dark  transition-colors duration-300 ease-out dark:bg-dark/75 dark:text-light"
+        className="fixed inset-x-0 top-0  z-[5] mx-auto  flex items-center justify-between bg-light/75 p-4 text-dark  transition-colors duration-300 ease-out dark:bg-dark/75 dark:text-light"
         aria-label="Global"
       >
         <div className="sm:hidden ">

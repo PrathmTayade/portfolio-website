@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`w-full bg-light pt-20 text-dark transition-colors duration-300 ease-out  dark:bg-dark dark:text-light  ${monts.className} `}
+        className={`container mx-auto bg-light pt-20 text-dark transition-colors duration-300 ease-out  dark:bg-dark dark:text-light  ${monts.className} `}
       >
         <Providers>
           <Nav />
