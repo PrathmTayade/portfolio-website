@@ -10,7 +10,7 @@ export default function Home() {
     <>
       {/* <TransitionEffect /> */}
       <main className=" container flex  items-center  sm:items-start ">
-        <div className=" w-full py-5 mb-4 px-8  md:px-16 lg:px-24 ">
+        <div className=" mb-4 w-full px-8 py-5  md:px-16 lg:px-24 ">
           <div className="flex w-full flex-col items-center  justify-between md:flex-row md:items-start ">
             <div className="relative inline-block w-full md:w-1/2  ">
               <Image
@@ -23,7 +23,7 @@ export default function Home() {
             <div className=" flex w-full flex-col  items-center self-center text-center lg:w-1/2 lg:text-left  ">
               <AnimatedText
                 text={"Turning Vision Into Reality With Code And Design."}
-                className={" text-center  md:text-left   "}
+                className={" text-center  md:text-left    "}
               />
 
               <p className="my-4 text-xs font-medium md:text-base ">
@@ -33,7 +33,7 @@ export default function Home() {
                 web development.
               </p>
 
-              <div className="mt-2 flex items-center gap-3  self-center lg:self-start ">
+              <div className="mt-2 flex items-center justify-between gap-3  self-center lg:self-start ">
                 <Link
                   href="/Prathamesh-Resume.pdf"
                   target={"_blank"}
@@ -45,9 +45,19 @@ export default function Home() {
                 <Link
                   href="mailto:prathmtayade30@gmail.com"
                   target={"_blank"}
-                  className="font-medium capitalize text-dark underline dark:text-light  "
+                  className="font-medium capitalize text-dark hover:text-gray-700 underline dark:text-light  "
                 >
-                  Contact
+                  Contact me
+                </Link>
+              </div>
+              <div className=" w-full p-5 lg:px-1 lg:py-5">
+                <Link href={"/about"}>
+                  <button
+                    type="button  "
+                    className="w-full rounded-md font-semibold text-lg  bg-gradient-to-r from-cyan-600 via-emerald-600 to-orange-500 py-3 text-white "
+                  >
+                    About me
+                  </button>
                 </Link>
               </div>
             </div>

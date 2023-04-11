@@ -26,6 +26,7 @@ const Projects = ({ title, description, src, gitLink, projectLink }) => {
         <h2 className="my-2 w-full text-left text-2xl font-bold lg:text-3xl ">
           {title}
         </h2>
+        <p className="my-2 text-lg lg:text-base ">{description}</p>
         <div className="flex w-full items-center  justify-between">
           <Link
             target="_blank"

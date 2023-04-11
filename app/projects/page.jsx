@@ -26,10 +26,12 @@ const Page = () => {
         <div className="col-span-12  sm:col-span-6">
           <Projects
             title={"Shopping Website"}
-            projectLink={"https://rainbow-caramel-5eb6ac.netlify.app/"}
+            projectLink={"https://ecommerce-website-prathmtayade.vercel.app/"}
             src={project2}
-            gitLink={"https://github.com/PrathmTayade/Shopping-Website"}
-            description={"asdsds adasdsad sdsadsa d"}
+            gitLink={"https://github.com/PrathmTayade/Ecommerce-website"}
+            description={
+              "Beautiful Ecommerce Website made using Nextjs Tailwindcss , utilising apis to fetch data and Redux to handle the states"
+            }
           />
         </div>
         <div className="col-span-12  sm:col-span-6">
