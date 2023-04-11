@@ -59,7 +59,7 @@ function Menu() {
             className={`
                 ${
                   open ? "" : "text-opacity-90"
-                } group inline-flex items-center justify-center rounded-md  px-3 py-2 text-base font-medium hover:text-opacity-100  focus:outline-none focus-visible:ring-2 focus-visible:ring-dark focus-visible:ring-opacity-75  dark:text-light dark:focus-visible:ring-light`}
+                } group inline-flex items-center justify-center rounded-md  px-1 p-2 text-base font-medium hover:text-opacity-100  focus:outline-none focus-visible:ring-2 focus-visible:ring-dark focus-visible:ring-opacity-75  dark:text-light dark:focus-visible:ring-light`}
           >
             <span>
               <MenuToggle open={open} />
