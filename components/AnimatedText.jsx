@@ -1,5 +1,5 @@
 "use client";
-import { animate, easeIn, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import React from "react";
 
 const quote = {
@@ -22,7 +22,7 @@ const singleWord = {
 };
 
 const colorWord = {
-  show: { color:  "transparent" },
+  show: { color: "transparent" },
 };
 
 const AnimatedText = ({ text, className }) => {
@@ -32,8 +32,8 @@ const AnimatedText = ({ text, className }) => {
         variants={quote}
         initial={"hidden"}
         whileInView={"show"}
-        viewport={{ once: true}}
-        className={` bg-gradient-to-r  from-cyan-500 to-purple-500 bg-clip-text text-4xl font-bold capitalize text-dark  dark:text-light md:text-5xl   lg:text-6xl ${className} `}
+        viewport={{ once: true }}
+        className={` bg-gradient-to-r from-pink-500 to-violet-500  dark:from-cyan-400 dark:to-fuchsia-500 bg-clip-text text-4xl font-bold capitalize text-dark  dark:text-light md:text-5xl   lg:text-6xl ${className} `}
       >
         {text.split(" ").map((word, index) => (
           <motion.span

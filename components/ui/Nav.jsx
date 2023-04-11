@@ -83,7 +83,7 @@ function Menu() {
                         {item.name}
                       </Popover.Button>
                     </Link>
-                  ))}
+                  ))}{" "}
                 </div>
               </div>
             </Popover.Panel>

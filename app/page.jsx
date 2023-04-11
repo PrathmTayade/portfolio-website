@@ -4,6 +4,7 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
 import TransitionEffect from "@/components/TransitionEffect";
+import Button from "@/components/ui/Button";
 
 export default function Home() {
   return (
@@ -45,20 +46,28 @@ export default function Home() {
                 <Link
                   href="mailto:prathmtayade30@gmail.com"
                   target={"_blank"}
-                  className="font-medium capitalize text-dark hover:text-gray-700 underline dark:text-light  "
+                  className="font-medium capitalize text-dark underline hover:text-gray-700 dark:text-light  "
                 >
                   Contact me
                 </Link>
               </div>
               <div className=" w-full p-5 lg:px-1 lg:py-5">
-                <Link href={"/about"}>
+                {/* <Link href={"/about"}>
                   <button
                     type="button  "
                     className="w-full rounded-md font-semibold text-lg  bg-gradient-to-r from-cyan-600 via-emerald-600 to-orange-500 py-3 text-white "
                   >
                     About me
                   </button>
-                </Link>
+                </Link> */}
+
+                <Button
+                  className={
+                    "w-full  bg-gradient-to-r from-cyan-600 via-emerald-600 to-orange-500 "
+                  }
+                  title={"About me"}
+                  href={"/about"}
+                />
               </div>
             </div>
           </div>
