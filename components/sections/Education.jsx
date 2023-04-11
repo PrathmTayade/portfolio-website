@@ -36,7 +36,7 @@ const Education = () => {
   });
 
   return (
-    <div className="h-screen  ">
+    <section className="h-screen w-full mt-10 ">
       <AnimatedText text={"Education"} className="text-center " />
       <div ref={ref} className="relative mx-auto md:w-[75%]">
         <motion.div
@@ -64,7 +64,7 @@ const Education = () => {
           />
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

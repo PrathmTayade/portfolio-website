@@ -1,9 +1,7 @@
 "use client";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import React from "react";
 
-
-//Todo: text color as a gradient with trasperent text or bg linera something
 const quote = {
   hidden: {},
   show: {
@@ -15,8 +13,16 @@ const quote = {
 };
 
 const singleWord = {
-  hidden: { opacity: 0, y: 50 , },
-  show: { opacity: 1, y: 0, transition: { duration: 1 } },
+  hidden: { opacity: 0, y: 50 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 1, delayChildren: 1.2 },
+  },
+};
+
+const colorWord = {
+  show: { color: "transparent" },
 };
 
 const AnimatedText = ({ text, className }) => {
@@ -26,16 +32,21 @@ const AnimatedText = ({ text, className }) => {
         variants={quote}
         initial={"hidden"}
         whileInView={"show"}
-        viewport={{ once: false, amount: 0.5 }}
-        className={` text-4xl  font-bold capitalize text-dark  dark:text-light md:text-5xl   lg:text-6xl ${className} `}
+        viewport={{ once: true }}
+        className={` bg-gradient-to-r from-pink-500 to-violet-500  dark:from-cyan-400 dark:to-fuchsia-500 bg-clip-text text-4xl font-bold capitalize text-dark  dark:text-light md:text-5xl   lg:text-6xl ${className} `}
       >
         {text.split(" ").map((word, index) => (
           <motion.span
             variants={singleWord}
             key={word + "-" + index}
-            className=" inline-block "
+            className=" inline-block  "
           >
-            {word}&nbsp;
+            <motion.span
+              variants={colorWord}
+              className="   transition-colors  duration-300 ease-in "
+            >
+              {word}&nbsp;
+            </motion.span>
           </motion.span>
         ))}
       </motion.h1>

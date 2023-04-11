@@ -8,7 +8,7 @@ export const metadata = {
 function layout({ children }) {
   return (
     <main className="flex w-full flex-col items-center  justify-center  gap-6 p-8  dark:text-light sm:px-16 md:px-28 lg:px-32">
-      <TransitionEffect />
+      {/* <TransitionEffect /> */}
       {children}
     </main>
   );

@@ -131,7 +131,7 @@ const Navbar = () => {
   const path = usePathname();
 
   return (
-    <nav className="fixed inset-x-0  top-0 z-10  flex items-center justify-between bg-light/75 p-4 text-dark  transition-colors duration-300 ease-out dark:bg-dark/75 dark:text-light ">
+    <nav className="fixed inset-x-0  top-0 z-[5]  flex items-center justify-between bg-light/75 p-4 text-dark  transition-colors duration-300 ease-out dark:bg-dark/75 dark:text-light ">
       <div className="hidden md:flex  ">
         <div className="flex gap-2  rounded-xl  p-1">
           {navigation.map((item) => (
@@ -157,7 +157,6 @@ const Navbar = () => {
         <Menu />
       </div>
 
-      {/* <Logo />                                              */}
 
       <ThemeSwitch />
     </nav>

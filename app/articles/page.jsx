@@ -1,3 +1,4 @@
+import Menu3 from '@/components/ui/Menu'
 import Menu from '@/components/ui/Menu'
 import React from 'react'
 
@@ -6,7 +7,7 @@ const page = () => {
     <div>
 
       <div>page</div>
-      <div><Menu/></div>
+      <div><Menu3/></div>
     </div>
   )
 }
