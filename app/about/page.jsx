@@ -14,7 +14,8 @@ const About = () => {
       <Experience />
 
       <Education />
-      <Button href={"/projects"} title={"My Projects"} className={"bg-dark"}/>
+      
+      <Button href={"/projects"} title={"My Projects"} className={"bg-dark dark:bg-light"} />
     </>
   );
 };

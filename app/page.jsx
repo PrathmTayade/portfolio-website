@@ -34,24 +34,27 @@ export default function Home() {
                 web development.
               </p>
 
-              <div className="mt-2 flex items-center justify-between gap-3  self-center lg:self-start ">
-                <Link
-                  href="/Prathamesh-Resume.pdf"
-                  target={"_blank"}
-                  className=" flex items-center rounded-lg border-2 border-solid bg-dark p-2 px-4 text-lg font-semibold capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark  dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light md:p-2.5 md:px-6 md:text-base"
-                  download={true}
-                >
-                  Resume <LinkArrow className={"ml-1 w-6 "} />
-                </Link>
-                <Link
-                  href="mailto:prathmtayade30@gmail.com"
-                  target={"_blank"}
-                  className="font-medium capitalize text-dark underline hover:text-gray-700 dark:text-light  "
-                >
-                  Contact me
-                </Link>
+              <div className="mt-2 w-full ">
+                <div className=" flex items-center  gap-3  self-center lg:self-start ">
+                  <Link
+                    href="/Prathamesh-Resume.pdf"
+                    target={"_blank"}
+                    className=" flex items-center rounded-lg  bg-dark p-2 px-4 text-lg font-semibold capitalize text-light outline hover:bg-transparent hover:text-dark hover:outline-dark  dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:outline-light md:p-2.5 md:px-6 md:text-base"
+                    download={true}
+                  >
+                    Resume <LinkArrow className={"ml-1 w-6 "} />
+                  </Link>
+                  <Link
+                    href="mailto:prathmtayade30@gmail.com"
+                    target={"_blank"}
+                    className="font-medium capitalize text-dark underline hover:text-gray-700 dark:text-light  "
+                  >
+                    Contact me
+                  </Link>
+                </div>
               </div>
-              <div className=" w-full p-5 lg:px-1 lg:py-5">
+
+              <div className=" mt-3 w-full">
                 {/* <Link href={"/about"}>
                   <button
                     type="button  "
@@ -63,7 +66,7 @@ export default function Home() {
 
                 <Button
                   className={
-                    "w-full  bg-gradient-to-r from-cyan-600 via-emerald-600 to-orange-500 "
+                    "w-full bg-gradient-to-r  from-sky-500 via-emerald-500 to-orange-500 text-light   "
                   }
                   title={"About me"}
                   href={"/about"}
