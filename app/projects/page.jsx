@@ -3,6 +3,7 @@ import FeaturedProjects from "@/components/FeaturedProjects";
 import Projects from "@/components/Projects";
 import project2 from "../../public/images/projects/Shopping-website.png";
 import project1 from "../../public/images/projects/metaverse.png";
+import project3 from "../../public/images/projects/Chartex.png";
 
 const Page = () => {
   return (
@@ -36,11 +37,13 @@ const Page = () => {
         </div>
         <div className="col-span-12  sm:col-span-6">
           <Projects
-            title={"project 2"}
-            projectLink={"https://github.com/PrathmTayade"}
-            src={project1}
-            gitLink={"https://github.com/PrathmTayade"}
-            description={"asdsds adasdsad sdsadsa d"}
+            title={"Chartex"}
+            projectLink={"https://github.com/PrathmTayade/Chartex"}
+            src={project3}
+            gitLink={"https://github.com/PrathmTayade/Chartex"}
+            description={
+              "Insights dashboard built using MERN stack, Chartjs, MUI, Tailwindcss, Redux, rtk-query "
+            }
           />
         </div>
       </div>
