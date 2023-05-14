@@ -18,7 +18,7 @@ const Page = () => {
         <div className="col-span-12">
           <FeaturedProjects
             title={"Metaverser Madness"}
-            description="Metaverse Madness is a stunning website that will take you on a journey through the imaginative world of virtual reality. Built with the latest web development tools, including Next.js, Tailwind, and Framer Motion, this website features a vibrant home page with stunning animations and a breathtaking gallery of digital art. Discover the creative mind behind the projects, explore the mesmerizing world of metaverse, and get in touch to collaborate on your next virtual reality adventure. Welcome to Metaverse Madness, where reality meets fantasy!"
+            description="Metaverse Madness is a stunning landing page that will take you on a journey through the imaginative world of virtual reality. Built with the latest web development tools, including Next.js, Tailwind, and Framer Motion, this website features a vibrant home page with stunning animations and a breathtaking gallery of digital art. Discover the creative mind behind the projects, explore the mesmerizing world of metaverse, and get in touch to collaborate on your next virtual reality adventure. Welcome to Metaverse Madness, where reality meets fantasy!"
             gitLink={"https://github.com/PrathmTayade/Metaverse_animations"}
             projectLink={"https://poetic-biscuit-d9ae34.netlify.app/"}
             src={project1}
