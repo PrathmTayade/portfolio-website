@@ -19,7 +19,7 @@ const Page = () => {
         <div className="col-span-12">
           <FeaturedProjects
             title={"Prompshare"}
-            description="An Ai prompts sharing website for Ai apps ,built using Nextjs 13, Mongodb, Tailwindcss"
+            description="Prompshare is an AI prompts sharing website that I built using Next.js 13, MongoDB, and TailwindCSS. It is a great way to share AI prompts with other users, and to find new AI prompts to use. Prompshare has a large collection of AI prompts, so you're sure to find something that you like. You can also collaborate with other users on AI projects by sharing your prompts, and working together to generate creative text content."
             gitLink={"https://github.com/PrathmTayade/propmshare"}
             projectLink={"https://propmshare.vercel.app/"}
             src={project4}
