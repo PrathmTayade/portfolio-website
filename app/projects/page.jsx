@@ -1,9 +1,10 @@
 import AnimatedText from "@/components/AnimatedText";
 import FeaturedProjects from "@/components/FeaturedProjects";
 import Projects from "@/components/Projects";
-import project2 from "../../public/images/projects/Shopping-website.png";
-import project1 from "../../public/images/projects/metaverse.png";
-import project3 from "../../public/images/projects/Chartex.png";
+import project2 from "@/public/images/projects/Shopping-website.png";
+import project1 from "@/public/images/projects/metaverse.png";
+import project3 from "@/public/images/projects/Chartex.png";
+import project4 from "@/public/images/projects/prompshare.png";
 
 const Page = () => {
   return (
@@ -17,11 +18,11 @@ const Page = () => {
       <div className="grid grid-cols-12  gap-x-6 gap-y-32 sm:gap-y-24  md:gap-x-10 lg:gap-x-16 ">
         <div className="col-span-12">
           <FeaturedProjects
-            title={"Metaverser Madness"}
-            description="Metaverse Madness is a stunning landing page that will take you on a journey through the imaginative world of virtual reality. Built with the latest web development tools, including Next.js, Tailwind, and Framer Motion, this website features a vibrant home page with stunning animations and a breathtaking gallery of digital art. Discover the creative mind behind the projects, explore the mesmerizing world of metaverse, and get in touch to collaborate on your next virtual reality adventure. Welcome to Metaverse Madness, where reality meets fantasy!"
-            gitLink={"https://github.com/PrathmTayade/Metaverse_animations"}
-            projectLink={"https://poetic-biscuit-d9ae34.netlify.app/"}
-            src={project1}
+            title={"Prompshare"}
+            description="An Ai prompts sharing website for Ai apps ,built using Nextjs 13, Mongodb, Tailwindcss"
+            gitLink={"https://github.com/PrathmTayade/propmshare"}
+            projectLink={"https://propmshare.vercel.app/"}
+            src={project4}
           />
         </div>
         <div className="col-span-12  sm:col-span-6">
@@ -44,6 +45,15 @@ const Page = () => {
             description={
               "Insights dashboard built using MERN stack, Chartjs, MUI, Tailwindcss, Redux, rtk-query "
             }
+          />
+        </div>
+        <div className="col-span-12">
+          <FeaturedProjects
+            title={"Metaverser Madness"}
+            description="Metaverse Madness is a stunning landing page that will take you on a journey through the imaginative world of virtual reality. Built with the latest web development tools, including Next.js, Tailwind, and Framer Motion, this website features a vibrant home page with stunning animations and a breathtaking gallery of digital art. Discover the creative mind behind the projects, explore the mesmerizing world of metaverse, and get in touch to collaborate on your next virtual reality adventure. Welcome to Metaverse Madness, where reality meets fantasy!"
+            gitLink={"https://github.com/PrathmTayade/Metaverse_animations"}
+            projectLink={"https://poetic-biscuit-d9ae34.netlify.app/"}
+            src={project1}
           />
         </div>
       </div>

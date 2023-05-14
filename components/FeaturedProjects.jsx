@@ -11,18 +11,21 @@ const FeaturedProjects = ({
   return (
     <article className=" relative flex w-full  flex-col items-center justify-between rounded-2xl rounded-br-3xl border border-solid border-dark bg-light  p-4 shadow-2xl  dark:border-light  dark:bg-dark sm:rounded-3xl sm:rounded-br-2xl  sm:p-8 md:p-12 lg:flex-row  ">
       <div className="absolute  -right-2 top-0 -z-10 h-[102%] w-[100%] rounded-[1.5rem] bg-dark dark:bg-light sm:-right-3  sm:h-[103%] sm:w-[101%] sm:rounded-[2.5rem] sm:rounded-br-3xl " />
-      <Link
-        target="_blank"
-        className="relative h-auto w-full cursor-pointer overflow-hidden rounded-lg lg:w-1/2"
-        href={projectLink}
-      >
-        <Image
-          alt={`${title}`}
-          className="h-auto w-full object-contain "
-          priority
-          src={src}
-        />
-      </Link>
+      <div className=" relative h-auto w-full ">
+        <Link
+          target="_blank"
+          className="  cursor-pointer overflow-hidden rounded-lg "
+          href={projectLink}
+        >
+          <Image
+            alt={`${title}`}
+            className="w-full object-contain rounded-lg "
+            priority
+            src={src}
+          />
+        </Link>
+      </div>
+
       <div className="flex w-full flex-col items-start justify-between pl-0 pt-6 lg:w-1/2 lg:pl-6">
         <span className="text-base font-medium text-primary dark:text-primaryDark sm:text-xl">
           Featured Project
