@@ -37,7 +37,7 @@ export default function Home() {
               <div className="mt-2 w-full ">
                 <div className=" flex items-center  gap-3  self-center lg:self-start ">
                   <Link
-                    href="/Prathamesh-Resume.pdf"
+                    href="/Resume.pdf"
                     target={"_blank"}
                     className=" flex items-center rounded-lg  bg-dark p-2 px-4 text-lg font-semibold capitalize text-light outline hover:bg-transparent hover:text-dark hover:outline-dark  dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:outline-light md:p-2.5 md:px-6 md:text-base"
                     download={true}
