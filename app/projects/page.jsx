@@ -5,6 +5,7 @@ import project2 from "@/public/images/projects/Shopping-website.png";
 import project1 from "@/public/images/projects/metaverse.png";
 import project3 from "@/public/images/projects/Chartex.png";
 import project4 from "@/public/images/projects/prompshare.png";
+import project5 from "@/public/images/projects/Bookstore.png";
 
 const Page = () => {
   return (
@@ -45,6 +46,17 @@ const Page = () => {
             description={
               "Insights dashboard built using MERN stack, Chartjs, MUI, Tailwindcss, Redux, rtk-query "
             }
+          />
+        </div>
+        <div className="col-span-12">
+          <FeaturedProjects
+            title={"Bookstore "}
+            description={
+              "Discover the best development books at our online bookstore! Built with React & Python FastAPI for a seamless experience. Enhance your coding skills with our expertly curated collection. Start your learning journey now!"
+            }
+            gitLink={"https://github.com/PrathmTayade/Bookstore"}
+            projectLink={"https://stately-cupcake-73320e.netlify.app/"}
+            src={project5}
           />
         </div>
         <div className="col-span-12">
