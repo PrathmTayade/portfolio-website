@@ -9,6 +9,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: "class",
+  plugins: [require("@tailwindcss/typography")],
   theme: {
     extend: {
       colors: {
@@ -83,6 +84,5 @@ module.exports = {
         "#121212",
       ],
     },
-    plugins: [],
   },
 };
