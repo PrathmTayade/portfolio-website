@@ -1,6 +1,6 @@
 import Image from "next/image";
 import profilePic from "../public/images/profile/developer-pic-1.png";
-import AnimatedText from "@/components/AnimatedText";
+import { AnimatedText, FlipAnimationText } from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -73,9 +73,11 @@ export default function Home() {
                   href={"/about"}
                 />
 
-                <StylishButtons
-                  text="work"
-                  className={"rounded-md border-2 border-gray-700  p-4 "}
+                <FlipAnimationText
+                  text="My work"
+                  className={
+                    "rounded-md border-2 border-gray-700  p-2 capitalize  "
+                  }
                 />
               </div>
             </div>

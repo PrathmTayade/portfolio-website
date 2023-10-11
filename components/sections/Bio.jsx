@@ -1,5 +1,5 @@
 import React from "react";
-import AnimatedText from "../AnimatedText";
+import { AnimatedText } from "../AnimatedText";
 import Image from "next/image";
 import profilePic from "../../public/images/profile/profile pic no bg.png";
 
