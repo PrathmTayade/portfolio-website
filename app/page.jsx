@@ -1,11 +1,9 @@
-import Image from "next/image";
-import profilePic from "../public/images/profile/developer-pic-1.png";
 import { AnimatedText, FlipAnimationText } from "@/components/AnimatedText";
-import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
-import TransitionEffect from "@/components/TransitionEffect";
 import Button from "@/components/ui/Button";
-import StylishButtons from "@/components/ui/StylishButtons";
+import Image from "next/image";
+import Link from "next/link";
+import profilePic from "../public/images/profile/developer-pic-1.png";
 
 export default function Home() {
   return (
