@@ -13,7 +13,8 @@ const About = () => {
 
       <Experience />
 
-      <Education />
+      
+      {/* <Education /> */}
       
       <Button href={"/projects"} title={"My Projects"} className={"bg-dark dark:bg-light"} />
     </>

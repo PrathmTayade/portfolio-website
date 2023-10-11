@@ -5,6 +5,7 @@ import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
 import TransitionEffect from "@/components/TransitionEffect";
 import Button from "@/components/ui/Button";
+import StylishButtons from "@/components/ui/StylishButtons";
 
 export default function Home() {
   return (
@@ -70,6 +71,11 @@ export default function Home() {
                   }
                   title={"About me"}
                   href={"/about"}
+                />
+
+                <StylishButtons
+                  text="work"
+                  className={"rounded-md border-2 border-gray-700  p-4 "}
                 />
               </div>
             </div>
