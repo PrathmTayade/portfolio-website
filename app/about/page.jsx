@@ -13,6 +13,8 @@ const About = () => {
 
       {/* <Experience /> */}
 
+      {/* //TODO make timeline exp and on click shows modal with further details  */}
+
       {/* <Education /> */}
 
       <Button
