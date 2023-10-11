@@ -1,10 +1,9 @@
-import Image from "next/image";
-import profilePic from "../public/images/profile/developer-pic-1.png";
-import AnimatedText from "@/components/AnimatedText";
-import Link from "next/link";
+import { AnimatedText, FlipAnimationText } from "@/components/AnimatedText";
 import { LinkArrow } from "@/components/Icons";
-import TransitionEffect from "@/components/TransitionEffect";
 import Button from "@/components/ui/Button";
+import Image from "next/image";
+import Link from "next/link";
+import profilePic from "../public/images/profile/developer-pic-1.png";
 
 export default function Home() {
   return (
@@ -34,43 +33,57 @@ export default function Home() {
                 web development.
               </p>
 
-              <div className="mt-2 w-full ">
-                <div className=" flex items-center  gap-3  self-center lg:self-start ">
-                  <Link
-                    href="/Resume.pdf"
-                    target={"_blank"}
-                    className=" flex items-center rounded-lg  bg-dark p-2 px-4 text-lg font-semibold capitalize text-light outline hover:bg-transparent hover:text-dark hover:outline-dark  dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:outline-light md:p-2.5 md:px-6 md:text-base"
-                    download={true}
-                  >
-                    Resume <LinkArrow className={"ml-1 w-6 "} />
-                  </Link>
-                  <Link
-                    href="mailto:prathmtayade30@gmail.com"
-                    target={"_blank"}
-                    className="font-medium capitalize text-dark underline hover:text-gray-700 dark:text-light  "
-                  >
-                    Contact me
-                  </Link>
-                </div>
-              </div>
-
               <div className=" mt-3 w-full">
-                {/* <Link href={"/about"}>
-                  <button
+                <Link href={"/projects"}>
+                  {/* Different button types */}
+
+                  {/* <button
                     type="button  "
                     className="w-full rounded-md font-semibold text-lg  bg-gradient-to-r from-cyan-600 via-emerald-600 to-orange-500 py-3 text-white "
                   >
                     About me
-                  </button>
-                </Link> */}
+                  </button> */}
 
-                <Button
+                  {/* <Button
                   className={
                     "w-full bg-gradient-to-r  from-sky-500 via-emerald-500 to-orange-500 text-light   "
                   }
                   title={"About me"}
                   href={"/about"}
-                />
+                /> */}
+
+                  <FlipAnimationText
+                    text="My work"
+                    className={
+                      "rounded-md border-2 border-gray-700   bg-dark p-2 px-4  capitalize text-light outline hover:bg-transparent hover:text-dark hover:outline-dark  dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:outline-light md:p-2.5 md:px-6 md:text-base  "
+                    }
+                  />
+                </Link>
+                <div className="mt-5 w-full ">
+                  <div className=" flex items-center flex-col lg:flex-row  gap-3  self-center lg:self-start ">
+
+                    {/* //TODO Update resume  */}
+                    {/* <Link
+                      href="/Resume.pdf"
+                      target={"_blank"}
+                      className=" flex items-center rounded-lg  bg-dark p-2 px-4 text-lg font-semibold capitalize text-light outline hover:bg-transparent hover:text-dark hover:outline-dark  dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:outline-light md:p-2.5 md:px-6 md:text-base"
+                      download={true}
+                    >
+                      Resume <LinkArrow className={"ml-1 w-6 "} />
+                    </Link> */}
+                    
+                    <h5 className="text-lg font-medium text-gray-800 dark:text-gray-200">
+                      Hey <span className="text-lg sm:text-xl md:text-2xl ">👋</span> wanna get in touch with me?
+                    </h5>
+                    <Link
+                      href="mailto:prathmtayade30@gmail.com"
+                      target="_blank"
+                      className="font-medium capitalize text-dark underline hover:text-gray-700 dark:text-light text-lg"
+                    >
+                      Contact me
+                    </Link>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

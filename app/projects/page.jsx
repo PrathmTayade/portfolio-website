@@ -1,4 +1,4 @@
-import AnimatedText from "@/components/AnimatedText";
+import { AnimatedText } from "@/components/AnimatedText";
 import FeaturedProjects from "@/components/FeaturedProjects";
 import Projects from "@/components/Projects";
 import project2 from "@/public/images/projects/Shopping-website.png";

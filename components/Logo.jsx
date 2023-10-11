@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
+import { FlipAnimationText } from "./AnimatedText";
 
 function Logo() {
   const MotionLink = motion(Link);
@@ -22,7 +23,7 @@ function Logo() {
         href={"/"}
         className="flex h-12 w-12 items-center justify-center rounded-full  bg-dark text-xl font-bold text-white dark:border-2 dark:border-solid dark:border-light "
       >
-        PT
+        <FlipAnimationText text={"PT"} />
       </MotionLink>
     </div>
   );

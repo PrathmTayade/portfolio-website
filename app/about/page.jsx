@@ -11,11 +11,17 @@ const About = () => {
 
       <Skills />
 
-      <Experience />
+      {/* <Experience /> */}
 
-      <Education />
-      
-      <Button href={"/projects"} title={"My Projects"} className={"bg-dark dark:bg-light"} />
+      {/* //TODO make timeline exp and on click shows modal with further details  */}
+
+      {/* <Education /> */}
+
+      <Button
+        href={"/projects"}
+        title={"My Projects"}
+        className={"bg-dark dark:bg-light"}
+      />
     </>
   );
 };

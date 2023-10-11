@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import React from "react";
+import { cn } from "@/lib/utils";
 
 const quote = {
   hidden: {},
@@ -54,4 +55,49 @@ const AnimatedText = ({ text, className }) => {
   );
 };
 
-export default AnimatedText;
+const FlipAnimationText = ({ text, className }) => {
+  return (
+    <div
+      className={cn(
+        "group relative transition duration-500 ease-in-out font-bold text-xl ",
+        className
+      )}
+    >
+      <div className=" sticky inset-0 flex items-center justify-center gap-2">
+        {text.split(" ").map((word, wordIndex) => (
+          <div key={wordIndex} className=" flex items-center justify-center  ">
+            {word.split("").map((letter, letterIndex) => (
+              <div
+                key={letterIndex}
+                className="origin-top   transition-transform duration-300 ease-in-out group-hover:scale-y-0"
+                style={{ transitionDelay: `${letterIndex * 75}ms` }}
+              >
+                {letter}
+              </div>
+            ))}
+          </div>
+        ))}
+        <div className="absolute inset-0 flex items-center justify-center gap-2 ">
+          {text.split(" ").map((word, wordIndex) => (
+            <div
+              key={wordIndex}
+              className=" flex items-center justify-center   "
+            >
+              {word.split("").map((letter, letterIndex) => (
+                <div
+                  key={letterIndex}
+                  className="origin-bottom scale-y-0  transition-transform  duration-300 ease-in-out group-hover:scale-y-100"
+                  style={{ transitionDelay: `${letterIndex * 75}ms` }}
+                >
+                  {letter}
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export { AnimatedText, FlipAnimationText };

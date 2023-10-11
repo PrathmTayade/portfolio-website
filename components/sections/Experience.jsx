@@ -1,7 +1,7 @@
 "use client";
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
-import AnimatedText from "../AnimatedText";
+import {AnimatedText} from "../AnimatedText";
 import Link from "next/link";
 import LiIcon from "../LiIcon";
 
