@@ -11,9 +11,9 @@ const About = () => {
 
       <Skills />
 
-      <Experience />
+      {/* <Experience /> */}
 
-      <Education />
+      {/* <Education /> */}
 
       <Button
         href={"/projects"}
