@@ -41,9 +41,7 @@ const Page = () => {
         <div className="col-span-12  sm:col-span-6">
           <Projects
             title={"CypherConnect"}
-            projectLink={
-              "https://github.com/PrathmTayade/cyperConnect-landing-page"
-            }
+            projectLink={"https://cyper-connect.vercel.app/"}
             src={project6}
             gitLink={
               "https://github.com/PrathmTayade/cyperConnect-landing-page"
