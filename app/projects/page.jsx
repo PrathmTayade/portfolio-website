@@ -6,6 +6,7 @@ import project1 from "@/public/images/projects/metaverse.png";
 import project3 from "@/public/images/projects/Chartex.png";
 import project4 from "@/public/images/projects/prompshare.png";
 import project5 from "@/public/images/projects/Bookstore.png";
+import project6 from "@/public/images/projects/CypherConnect.png";
 
 const Page = () => {
   return (
@@ -39,12 +40,16 @@ const Page = () => {
         </div>
         <div className="col-span-12  sm:col-span-6">
           <Projects
-            title={"Chartex"}
-            projectLink={"https://github.com/PrathmTayade/Chartex"}
-            src={project3}
-            gitLink={"https://github.com/PrathmTayade/Chartex"}
+            title={"CypherConnect"}
+            projectLink={
+              "https://github.com/PrathmTayade/cyperConnect-landing-page"
+            }
+            src={project6}
+            gitLink={
+              "https://github.com/PrathmTayade/cyperConnect-landing-page"
+            }
             description={
-              "Insights dashboard built using MERN stack, Chartjs, MUI, Tailwindcss, Redux, rtk-query "
+              "CypherConnect - Modern UI/UX website, developed using Vite, React.js, Tailwind CSS and Framer Motion, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general."
             }
           />
         </div>
@@ -59,13 +64,24 @@ const Page = () => {
             src={project5}
           />
         </div>
-        <div className="col-span-12">
-          <FeaturedProjects
+        <div className="col-span-12  sm:col-span-6">
+          <Projects
             title={"Metaverser Madness"}
-            description="Metaverse Madness is a stunning landing page that will take you on a journey through the imaginative world of virtual reality. Built with the latest web development tools, including Next.js, Tailwind, and Framer Motion, this website features a vibrant home page with stunning animations and a breathtaking gallery of digital art. Discover the creative mind behind the projects, explore the mesmerizing world of metaverse, and get in touch to collaborate on your next virtual reality adventure. Welcome to Metaverse Madness, where reality meets fantasy!"
+            description="Metaverse Madness: A captivating landing page exploring the imaginative world of virtual reality. Crafted with Next.js, Tailwind, and Framer Motion, it boasts vibrant animations, a breathtaking art gallery, and insights into the creative mind behind it all. Welcome to the intersection of reality and fantasy!"
             gitLink={"https://github.com/PrathmTayade/Metaverse_animations"}
             projectLink={"https://poetic-biscuit-d9ae34.netlify.app/"}
             src={project1}
+          />
+        </div>
+        <div className="col-span-12  sm:col-span-6">
+          <Projects
+            title={"Chartex"}
+            projectLink={"https://github.com/PrathmTayade/Chartex"}
+            src={project3}
+            gitLink={"https://github.com/PrathmTayade/Chartex"}
+            description={
+              "Insights dashboard built using MERN stack, Chartjs, MUI, Tailwindcss, Redux, rtk-query "
+            }
           />
         </div>
       </div>
