@@ -7,6 +7,7 @@ import project3 from "@/public/images/projects/Chartex.png";
 import project4 from "@/public/images/projects/prompshare.png";
 import project5 from "@/public/images/projects/Bookstore.png";
 import project6 from "@/public/images/projects/CypherConnect.png";
+import project7 from "@/public/images/projects/docker-go-fullstack.png";
 
 const Page = () => {
   return (
@@ -25,6 +26,19 @@ const Page = () => {
             gitLink={"https://github.com/PrathmTayade/propmshare"}
             projectLink={"https://propmshare.vercel.app/"}
             src={project4}
+          />
+        </div>
+        <div className="col-span-12  sm:col-span-6">
+          <Projects
+            title={"Fullstack Go app"}
+            projectLink={
+              "https://github.com/PrathmTayade/docker-go-fullstack-app"
+            }
+            src={project7}
+            gitLink={"https://github.com/PrathmTayade/docker-go-fullstack-app"}
+            description={
+              "Dockerized fullstack application built with Go backend and Nextjs as frontend "
+            }
           />
         </div>
         <div className="col-span-12  sm:col-span-6">
@@ -51,6 +65,15 @@ const Page = () => {
             }
           />
         </div>
+        <div className="col-span-12  sm:col-span-6">
+          <Projects
+            title={"Metaverser Madness"}
+            description="Metaverse Madness: A captivating landing page exploring the imaginative world of virtual reality. Crafted with Next.js, Tailwind, and Framer Motion, it boasts vibrant animations, a breathtaking art gallery, and insights into the creative mind behind it all. Welcome to the intersection of reality and fantasy!"
+            gitLink={"https://github.com/PrathmTayade/Metaverse_animations"}
+            projectLink={"https://poetic-biscuit-d9ae34.netlify.app/"}
+            src={project1}
+          />
+        </div>
         <div className="col-span-12">
           <FeaturedProjects
             title={"Bookstore "}
@@ -62,15 +85,7 @@ const Page = () => {
             src={project5}
           />
         </div>
-        <div className="col-span-12  sm:col-span-6">
-          <Projects
-            title={"Metaverser Madness"}
-            description="Metaverse Madness: A captivating landing page exploring the imaginative world of virtual reality. Crafted with Next.js, Tailwind, and Framer Motion, it boasts vibrant animations, a breathtaking art gallery, and insights into the creative mind behind it all. Welcome to the intersection of reality and fantasy!"
-            gitLink={"https://github.com/PrathmTayade/Metaverse_animations"}
-            projectLink={"https://poetic-biscuit-d9ae34.netlify.app/"}
-            src={project1}
-          />
-        </div>
+
         <div className="col-span-12  sm:col-span-6">
           <Projects
             title={"Chartex"}
