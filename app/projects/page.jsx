@@ -8,6 +8,7 @@ import project4 from "@/public/images/projects/prompshare.png";
 import project5 from "@/public/images/projects/Bookstore.png";
 import project6 from "@/public/images/projects/CypherConnect.png";
 import project7 from "@/public/images/projects/docker-go-fullstack.png";
+import project8 from "@/public/images/projects/taskify.png";
 
 const Page = () => {
   return (
@@ -19,6 +20,17 @@ const Page = () => {
         />
       </div>
       <div className="grid grid-cols-12  gap-x-6 gap-y-32 sm:gap-y-24  md:gap-x-10 lg:gap-x-16 ">
+        <div className="col-span-12">
+          <FeaturedProjects
+            title={"Taskify"}
+            description={
+              "Fullstack Trello Clone: Next.js 14, Server Actions, React, Prisma, Stripe, Tailwind, MySQL. "
+            }
+            gitLink={"https://github.com/PrathmTayade/taskify-app"}
+            projectLink={"https://taskify-taupe.vercel.app/"}
+            src={project8}
+          />
+        </div>
         <div className="col-span-12">
           <FeaturedProjects
             title={"Prompshare"}
