@@ -16,6 +16,8 @@ const Projects = ({ title, description, src, gitLink, projectLink }) => {
           alt="project 1"
           className="h-auto w-full"
           style={{ color: "transparent", transform: "none" }}
+          width={500}
+          height={500}
         />
       </Link>
       <div className="mt-4 flex w-full flex-col items-start justify-between">

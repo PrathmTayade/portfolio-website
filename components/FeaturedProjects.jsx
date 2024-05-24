@@ -22,6 +22,8 @@ const FeaturedProjects = ({
             className="w-full object-contain rounded-lg "
             priority
             src={src}
+            width={800}
+            height={600}
           />
         </Link>
       </div>

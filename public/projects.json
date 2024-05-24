@@ -1,0 +1,75 @@
+[
+  {
+    "type": "featured",
+    "title": "Taskify",
+    "description": "A comprehensive fullstack task management app built with Next.js 14 and React, leveraging Server Actions for efficient server-side logic. Utilizes Prisma and PostgreSQL for robust data handling, integrates Stripe for secure payments, and features responsive design with Tailwind CSS.",
+    "gitLink": "https://github.com/PrathmTayade/taskify-app",
+    "projectLink": "https://taskify-taupe.vercel.app/",
+    "src": "/images/projects/taskify.png"
+  },
+
+  {
+    "type": "project",
+    "title": "Fullstack Go app",
+    "description": "Dockerized fullstack application built with Go backend and Nextjs as frontend",
+    "gitLink": "https://github.com/PrathmTayade/docker-go-fullstack-app",
+    "projectLink": "https://github.com/PrathmTayade/docker-go-fullstack-app",
+    "src": "/images/projects/docker-go-fullstack.png"
+  },
+  {
+    "type": "project",
+    "title": "Project Management",
+    "description": "A fullstack application utilizes Node.js Express.js, GraphQL, and MongoDB for efficient data querying and manipulation. The React frontend integrates Apollo Client for seamless GraphQL data management and state. With a Dockerized branch included, it ensures easy deployment and scalability. This combination delivers a robust, scalable, and high-performance web application.",
+    "gitLink": "https://github.com/PrathmTayade/project-mgmt-app-graphql",
+    "projectLink": "https://project-mgmt-app-graphql-frontend.vercel.app/",
+    "src": "/images/projects/project-mgmt.png"
+  },
+  {
+    "type": "featured",
+    "title": "Prompshare",
+    "description": "Prompshare is an AI prompts sharing website that I built using Next.js 13, MongoDB, and TailwindCSS. It is a great way to share AI prompts with other users, and to find new AI prompts to use. Prompshare has a large collection of AI prompts, so you're sure to find something that you like. You can also collaborate with other users on AI projects by sharing your prompts, and working together to generate creative text content.",
+    "gitLink": "https://github.com/PrathmTayade/propmshare",
+    "projectLink": "https://propmshare.vercel.app/",
+    "src": "/images/projects/prompshare.png"
+  },
+  {
+    "type": "project",
+    "title": "Shopping Website",
+    "description": "Beautiful Ecommerce Website made using Nextjs Tailwindcss , utilising apis to fetch data and Redux to handle the states",
+    "gitLink": "https://github.com/PrathmTayade/Ecommerce-website",
+    "projectLink": "https://ecommerce-website-prathmtayade.vercel.app/",
+    "src": "/images/projects/Shopping-website.png"
+  },
+  {
+    "type": "project",
+    "title": "CypherConnect",
+    "description": "CypherConnect - Modern UI/UX website, developed using Vite, React.js, Tailwind CSS and Framer Motion, exemplifies modern UI/UX principles. Its sleek design, seamless animations, and overall user experience set a high standard, serving as a reference or inspiration for future modern applications or websites in general.",
+    "gitLink": "https://github.com/PrathmTayade/cyperConnect-landing-page",
+    "projectLink": "https://cyper-connect.vercel.app/",
+    "src": "/images/projects/CypherConnect.png"
+  },
+  {
+    "type": "project",
+    "title": "Metaverser Madness",
+    "description": "Metaverse Madness: A captivating landing page exploring the imaginative world of virtual reality. Crafted with Next.js, Tailwind, and Framer Motion, it boasts vibrant animations, a breathtaking art gallery, and insights into the creative mind behind it all. Welcome to the intersection of reality and fantasy!",
+    "gitLink": "https://github.com/PrathmTayade/Metaverse_animations",
+    "projectLink": "https://poetic-biscuit-d9ae34.netlify.app/",
+    "src": "/images/projects/metaverse.png"
+  },
+  {
+    "type": "project",
+    "title": "Bookstore",
+    "description": "Discover the best development books at our online bookstore! Built with React & Python FastAPI for a seamless experience. Enhance your coding skills with our expertly curated collection. Start your learning journey now!",
+    "gitLink": "https://github.com/PrathmTayade/Bookstore",
+    "projectLink": "https://stately-cupcake-73320e.netlify.app/",
+    "src": "/images/projects/Bookstore.png"
+  },
+  {
+    "type": "project",
+    "title": "Chartex",
+    "description": "Insights dashboard built using MERN stack, Chartjs, MUI, Tailwindcss, Redux, rtk-query",
+    "gitLink": "https://github.com/PrathmTayade/Chartex",
+    "projectLink": "https://github.com/PrathmTayade/Chartex",
+    "src": "/images/projects/Chartex.png"
+  }
+]
