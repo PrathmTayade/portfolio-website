@@ -1,10 +1,10 @@
 [
   {
     "type": "featured",
-    "title": "Taskify",
+    "title": "Taskito",
     "description": "A comprehensive fullstack task management app built with Next.js 14 and React, leveraging Server Actions for efficient server-side logic. Utilizes Prisma and PostgreSQL for robust data handling, integrates Stripe for secure payments, and features responsive design with Tailwind CSS.",
-    "gitLink": "https://github.com/PrathmTayade/taskify-app",
-    "projectLink": "https://taskify-taupe.vercel.app/",
+    "gitLink": "https://github.com/PrathmTayade/taskito-app",
+    "projectLink": "https://taskito-boards.vercel.app/",
     "src": "/images/projects/taskify.png"
   },
 
