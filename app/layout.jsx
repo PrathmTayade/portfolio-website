@@ -4,7 +4,7 @@ import { Montserrat } from "next/font/google";
 import Footer from "@/components/ui/Footer";
 import Providers from "@/components/Providers";
 import Nav from "@/components/ui/Nav";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 
 const monts = Montserrat({ subsets: ["latin"], variable: "..fonts-mont" });
 export const metadata = {
