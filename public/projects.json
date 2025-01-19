@@ -34,6 +34,14 @@
   },
   {
     "type": "project",
+    "title": "Sticky notes",
+    "description": "A free online sticky notes app",
+    "gitLink": "https://github.com/PrathmTayade/sticky-notes",
+    "projectLink": "https://sticky-notes-prathmtayades-projects.vercel.app/",
+    "src": "/images/projects/stickynotes.png"
+  },
+  {
+    "type": "project",
     "title": "Shopping Website",
     "description": "Beautiful Ecommerce Website made using Nextjs Tailwindcss , utilising apis to fetch data and Redux to handle the states",
     "gitLink": "https://github.com/PrathmTayade/Ecommerce-website",
